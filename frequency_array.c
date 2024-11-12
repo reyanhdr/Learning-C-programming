@@ -13,7 +13,9 @@ int main()
 
     for (int i = 0; i < n; i++){
 
-        scanf("%d",&a[i]);
+        scanf("%d",&a[i]);int a, b;
+scanf("%d %d",&a,&b);
+
     }
   // memory space nilam besi 
   

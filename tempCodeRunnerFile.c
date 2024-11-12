@@ -1,22 +1,52 @@
 #include <stdio.h>
-int main()
-{
+#include <math.h>
+#include <string.h>
+#include <stdlib.h>
 
-   int n ;
+
+int main()
+{  
+   int n;
    scanf("%d",&n);
 
-   int years,months,days,reminder1,reminder2;
+   int a[n+1];
 
-   years=n/365;
-   reminder1=n%365;
+   for (int i = 0; i < n; i++){
 
-   months=reminder1/30;
-   reminder2=reminder1%30;
+    scanf("%d",&a[i]);
 
-   days=reminder2;
+   }
 
-   printf("%d years\n%d months\n%d days",years,months,days);
+   int count = 1;
    
+   
+   for (int i = 0; i < n; i++)
+   {
+    int f = 1;
+
+    for (int j = 0; j < n; j++)
+    {
+        if (i != j && a[i] == a[j]){
+            f = 0;
+            break;
+        }
+    }
+
+    if (f == 0 ){
+        count++;
+    }
+   }
+
+   printf("%d \n",count);
+
+
+
+
+
+
+
+
 
     return 0;
+
 }
