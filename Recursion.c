@@ -3,18 +3,18 @@
 #include <math.h>
 #include <stdlib.h>
 
-// void distribute (int roll , int  x)
-// {
-//     if (roll == 4){
-//         return;
-//     }
+void distribute (int roll , int  x)
+{
+    if (roll == 4){
+        return;
+    }
  
-//     printf("Roll %d Received 1 chocolate \n",roll);
+    printf("Roll %d Received 1 chocolate \n",roll);
 
-//     distribute(roll + 1 , x-1);
+    distribute(roll + 1 , x-1);
 
 
-// }
+}
 void fun ( int x,int n)
 {
     if (x > n){
@@ -32,11 +32,11 @@ void fun ( int x,int n)
 
 int main() 
 {
-    // printf("Before function call in main \n");
+    printf("Before function call in main \n");
     
     fun(1,6);
 
-    // printf("After function call in main \n");
+    printf("After function call in main \n");
      
     return 0;
 }

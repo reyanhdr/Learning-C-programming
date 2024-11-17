@@ -3,19 +3,19 @@
 #include <math.h>
 #include <stdlib.h>
 
-void swap (int *a, int *b) 
+void fun( int x , int *y)
 {
-    int temp = *a;
-    *a =*b;
-    *b = temp;
+    x *= 10; 
+    *y *= 10;
+    printf("%d %d \n", x, *y);
 }
 
 int main() 
 {
-    int a ,b;
-    scanf("%d %d",&a,&b);
+    int a = 10 , b = 20;
 
-    swap (&a,&b);
+    fun (a, &b);
+
     printf("%d %d \n", a,b);
      
     return 0;

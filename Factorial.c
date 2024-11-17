@@ -1,23 +1,21 @@
-#include<stdio.h>
-#include<math.h>
- int main()
- {  
-    int t;
-    scanf("%d",&t);
-    for (int cs = 0; cs < t; cs++){
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+long long int  factorial(int n){
+    if ( n == 0){
+        return 1;
+    }
+    return n* factorial(n-1);
+}
+
+int main() 
+{
     int n;
-
     scanf("%d",&n);
 
-   long long  int fact = 1;
-    
-    for (int i = 1 ; i <= n;i++){
-
-     fact *=i;
-
-    }
-    printf("%lld\n",fact);
- }
-     return 0;
- }
+    printf("%lld \n", factorial(n));
+     
+    return 0;
+}
